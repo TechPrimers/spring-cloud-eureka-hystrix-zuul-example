@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hello-server
+
+server:
+  port: 8071
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+  instance:
+    hostname: localhost
